@@ -1,11 +1,14 @@
-
 import './App.css';
 import TodoForm from './components/TodoForm';
 
 function App() {
+  const addTodo = todo => {
+  };
+
   return (
     <div className="rodo-todo">
-      <TodoForm />
+      <TodoForm onSubmit={addTodo} />
+      
     </div>
   );
 }
