@@ -1,16 +1,17 @@
-import './App.css';
-import TodoForm from './components/TodoForm';
 
-function App() {
-  const addTodo = todo => {
-  };
+import React from "react";
+import './App.css'
+import TodoList from "./components/TodoList";
 
+
+function App(){
   return (
-    <div className="rodo-todo">
-      <TodoForm onSubmit={addTodo} />
-      
+    <div  className="rodo-app">
+    <TodoList />
+    
+
     </div>
-  );
+  )
 }
 
 export default App;
