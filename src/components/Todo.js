@@ -9,9 +9,16 @@ const [edit, setEdit] = useState({
 function Todo() {
   
 
-  return (
-    <div>Todo</div>
-  )
+  return todos.map((todo,index) => (
+  <div
+  className={todo.isComplete ? 'todo-row complete' : ' todo-row'}
+  key ={index}
+  >
+
+    </div>
+  ) )
+    
+  
 }
 
 export default Todo
